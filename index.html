@@ -15,45 +15,64 @@
 <body>
 
     <header>
-        <div>
-            <div>
-                <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div>
+                <div class="col-12 col-sm">
+<!--                    this div gonna take up 6 col automatically-->
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <div>
-            <div>
+    <div class="container"> <!--  after adding this class attribute
+    the content starts to have some margin that handled by bootstrap and
+    adjust automatically according to the size-->
+        <div class="row">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
+                <p>this div's class states
+                    that col-12 for extra small screen sizes,
+                    this will occupy the entire row, col-sm-4 for small,
+                    it will occupy full columns, and then col-md-3
+                    for medium to extra large, it will occupy three
+                    columns in the row.
+                    the remaining part will be occupied by the content down below</p>
             </div>
-            <div>
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p>order-sm-first will push this div to left side of the
+                screen</p>
+                <p>the classes as col, indicating that this will be stacked below the
+                    content here in the extra small screen sizes, and then I'll say column sm,
+                    so which means that this will occupy the remaining eight columns here,
+                    because four columns is taken up by this one, and then we'll say column md,
+                    so which means that this will occupy the remaining nine columns
+                    because three columns are taken up for medium to extra large
+                    screen sizes by the content above here</p>
             </div>
         </div>
 
 
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div>
+            <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="row"> <!-- here I should have added class="row" but I dont for
+         emphasizing the difference with previous two div-->
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div>
+            <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -62,10 +81,13 @@
     </div>
 
     <footer>
-        <div>
-            <div>             
-                <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
+                    <span>for extra small screen size, this will
+                    occupies four col and for small to extra large,
+                    just occupies 2 col</span>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -73,7 +95,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -84,7 +106,7 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div>
+                <div class="col-12 col-sm-4">
                     <div>
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -95,8 +117,8 @@
                     </div>
                 </div>
            </div>
-           <div>             
-                <div>
+           <div class="row">
+                <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
