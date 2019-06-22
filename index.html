@@ -14,7 +14,42 @@
 </head>
 
 <body>
-
+    <!--navbar: in bootstrap it allows me to create a navigation bar
+     navbar-dark: dark in color
+     navbar-expand-sm: on small and extra small
+    screens, this navbar will becaome a toggle-able bar
+    bg-primary: set default background for navbar; in bootstrap
+    it set to blue
+    navbar-brand: it allows to display information as branding information in narbar
+    navbar-nav: include the set of link that will be included in navbar and
+    display horizontally in navbar
+    mr-auto: right margin push items to as left as possible
+    data-toggle: JS component usage in bootstrap
+    a toggle button so that the items can be toggled on or off
+    This creates a button with three horizontal lines.
+    For medium to extra large screens, this button is hidden.
+    For small and extra small screens,
+    this button becomes visible.
+    This button will act as the toggle for the navbar items.
+    data-target: refer to an element when this button got clicked and referred element fade in
+    -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                                        href="./assignment1/aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -91,7 +126,7 @@
                     just occupies 2 col</span>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./assignment1/aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
