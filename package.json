@@ -1,31 +1,11 @@
 {
-<<<<<<< HEAD
-  "name": "confusion",
-  "version": "1.0.0",
-  "description": "This is a website for Ristorante Con Fusion",
-  "main": "index.html",
-  "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
-=======
   "name": "git-test",
   "version": "1.0.0",
   "description": "testing",
   "main": "index.html",
   "scripts": {
-      "start":"npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",	
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
   "repository": {
@@ -40,6 +20,12 @@
   "homepage": "https://github.com/jianl9/NodeJs_Test#readme",
   "devDependencies": {
     "lite-server": "^2.5.3"
->>>>>>> fbd9e83fdd3834625f061e663fc768b90595be98
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.12.9"
   }
 }
