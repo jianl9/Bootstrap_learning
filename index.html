@@ -79,7 +79,17 @@
                     <img class="img-fluid" src="img/logo.png" alt="Ristorante con Fusion">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <button class="btn btn-sm btn-block btn-warning" onclick="location.href='#reserve-table-card'">Reserve Table</button>
+<!--                    <button class="btn btn-sm btn-block btn-warning" onclick="location.href='#reserve-table-card'">Reserve Table</button>-->
+<!--                    data-toggle-tooltip, so you can see that the javascript component
+coming into use here and then data-html-true. So, if we apply this data HTML attribute and
+set it to true, that means that the tooltip content can be styled using HTML and
+then they will say the next line, I will give the attribute of title.
+So, this is where the contents of the tooltip will be enclosed.
+data-placement="bottom": sent position of this data-->
+                    <a role="button" class="btn btn-sm btn-block btn-warning nav-link"
+                       href="#reserve" data-toggle="tooltip" data-html="true"
+                    title="Or Call us at <br><strong>+852 12345678</strong>"
+                    data-placement="bottom">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -153,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="row row-content justify-content-center">
+        <div class="row row-content justify-content-center" id="reserve">
              <div class="col-12 col-sm-8">
                  <div class="card">
                      <h3 class="card-header bg-warning text-light" >Reserve a Table</h3>
@@ -258,5 +268,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
