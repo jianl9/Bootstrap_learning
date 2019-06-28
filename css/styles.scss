@@ -81,3 +81,14 @@ body{
 // meaning that the output of this the converted files
 // will be in the CSS folder, and the source here will also
 // be in the CSS folder.
+
+.modal-header {
+  background: $background-dark;
+  button, h3, h4 {
+    color:floralwhite;
+  }
+}
+
+.modal-body {
+  background: $background-pale;
+}

@@ -64,9 +64,12 @@
                         <span class="fa fa-address-card fa-lg"></span>Contact</a>
                     </li>
                 </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                <span class="navbar-text" id="loginBtn">
+<!--                    <a data-toggle="modal" data-target="#loginModal">-->
+<!--                    <span class="fa fa-sign-in"></span> Login</a>-->
+                     <a>
+                         <span class="fa fa-sign-in"></span> Login
+                     </a>
                 </span>
             </div>
         </div>
@@ -252,8 +255,11 @@ set it to true, that means that the tooltip content can be styled using HTML and
 then they will say the next line, I will give the attribute of title.
 So, this is where the contents of the tooltip will be enclosed.
 data-placement="bottom": sent position of this data-->
+<!--                    <a role="button" class="btn btn-sm btn-block btn-warning nav-link"-->
+<!--                       data-toggle="modal" data-target="#reserveModal">Reserve Table</a>-->
                     <a role="button" class="btn btn-sm btn-block btn-warning nav-link"
-                       data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                       id="reserveBtn"
+                       >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -539,6 +545,16 @@ data-placement="bottom": sent position of this data-->
                     $carouseBtn.children("span").removeClass('fa-play');
                     $carouseBtn.children("span").addClass('fa-pause');
                 }
+            });
+
+            // login table display/hide
+            $('#loginBtn').click(function () {
+                $('#loginModal').modal("show");
+            });
+
+            // reserve table
+            $('#reserveBtn').click(function () {
+                $('#reserveModal').modal("show");
             });
         });
     </script>
