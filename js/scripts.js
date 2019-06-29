@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    $('#mycarousel').carousel({interval:2000});
+    var $carouselBtn = $("#carouselButton"),
+        $myc = $("#mycarousel");
+
+    $myc.carousel({interval:2000});
+
     // play/pause
     // $('#carousel-pause').click(function () {
     //     $('#mycarousel').carousel('pause')
@@ -9,18 +13,16 @@ $(document).ready(function () {
     // });
 
     // toggle play/pause
-    $("#carouselButton").click(function(){
-        let $carouseBtn = $("#carouselButton");
-        let $myc = $("#mycarousel");
-        if ($carouseBtn.children("span").hasClass('fa-pause')) {
+    $carouselBtn.click(function(){
+        if ($carouselBtn.children("span").hasClass('fa-pause')) {
             $myc.carousel('pause');
-            $carouseBtn.children("span").removeClass('fa-pause');
-            $carouseBtn.children("span").addClass('fa-play');
+            $carouselBtn.children("span").removeClass('fa-pause');
+            $carouselBtn.children("span").addClass('fa-play');
         }
-        else if ($carouseBtn.children("span").hasClass('fa-play')){
+        else if ($carouselBtn.children("span").hasClass('fa-play')){
             $myc.carousel('cycle');
-            $carouseBtn.children("span").removeClass('fa-play');
-            $carouseBtn.children("span").addClass('fa-pause');
+            $carouselBtn.children("span").removeClass('fa-play');
+            $carouselBtn.children("span").addClass('fa-pause');
         }
     });
 
